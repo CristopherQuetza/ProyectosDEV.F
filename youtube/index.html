@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>My Webpage</title>
+</head>
+<body>
+    <header>
+        <img src='img/logoyt.jpg' alt="Logo" class="logo" onclick="redirect('https://www.youtube.com')">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="video-container">
+            <video width="100%" height="auto" controls>
+                <source src="img/California.mp4" type="video/mp4">
+                <p>Hotel California</p>>
+            </video>
+        </section>
+        <aside class="sidebar">
+            <h2>Videos Recomendados</h2>
+            <ul>
+                <li>
+                    <img src="img/imagen 1.png" alt="Crea tu sitio Web">
+                    <h3>Crea ti sitio Web </h3>
+                </li>
+                <li>
+                    <img src="img/vevo.jfif" alt="Video Vevo">
+                    <h3>Vevo</h3>
+                </li>
+                <!-- Add more recommended videos here -->
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2023</p>
+    </footer>
+</body>
+<script>
+    function redirect(url) {
+        window.location.href = url;
+    }
+</script>
+</html>
